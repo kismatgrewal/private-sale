@@ -5,7 +5,7 @@ const Wait = ({ next, setNext }) => {
     setTimeout(() => {
       setNext(next + 1);
     }, 2000);
-  }, []);
+  }, [setNext]);
 
   return (
     <div className="w-full h-screen flex-col gap-4 flex items-center justify-center">
